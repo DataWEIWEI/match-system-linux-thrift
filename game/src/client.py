@@ -22,14 +22,11 @@ def operate(op, user_id, username, score):
     # Connect!
     transport.open()
 
-    user = User(1, 'ww', 1500)
-    client.add_user(user, '')
-
     user = User(user_id, username, score)
 
     if op == 'add':
         client.add_user(user, '')
-    elif op == 'remove'
+    elif op == 'remove':
         client.remove_user(user, '')
 
     # Close!
@@ -38,7 +35,7 @@ def operate(op, user_id, username, score):
 def main():
     for line in stdin:
         op, user_id, username, score = line.split(' ')
-        operate(op, int(user_id), username, in(score)
+        operate(op, int(user_id), username, int(score))
 
 
 
