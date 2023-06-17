@@ -1,3 +1,2 @@
-# linux 教程
-## thrift_learning
+This is a match system based on thrift that is deployed on linux.
 
